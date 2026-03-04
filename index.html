@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudySync — Assignment Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-inner">
+      <div>
+        <div class="logo">Study<span>Sync</span></div>
+        <div class="header-date" id="currentDate"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-card total">
+      <div class="stat-label">Total Tasks</div>
+      <div class="stat-num" id="statTotal">0</div>
+    </div>
+    <div class="stat-card done-s">
+      <div class="stat-label">Completed</div>
+      <div class="stat-num" id="statDone">0</div>
+    </div>
+    <div class="stat-card pending-s">
+      <div class="stat-label">Pending</div>
+      <div class="stat-num" id="statPending">0</div>
+    </div>
+    <div class="stat-card overdue-s">
+      <div class="stat-label">Overdue</div>
+      <div class="stat-num" id="statOverdue">0</div>
+    </div>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-wrap">
+    <div class="ring-container">
+      <svg width="110" height="110" viewBox="0 0 110 110">
+        <circle cx="55" cy="55" r="44" fill="none" stroke="#2a2a3a" stroke-width="10"/>
+        <circle id="progressRing" cx="55" cy="55" r="44" fill="none" stroke="#3dffa0" stroke-width="10"
+          stroke-linecap="round" stroke-dasharray="276.46"
+          stroke-dashoffset="276.46"
+          transform="rotate(-90 55 55)"
+          style="transition: stroke-dashoffset 0.6s ease"/>
+      </svg>
+      <div class="ring-label">
+        <div class="ring-pct" id="ringPct">0%</div>
+        <div class="ring-sub">done</div>
+      </div>
+    </div>
+    <div class="progress-info">
+      <h2>Overall Progress</h2>
+      <p id="progressMsg">Add your assignments and track what you've completed vs what's left.</p>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <input class="search-box" type="text" placeholder="Search assignments..." id="searchInput">
+    <button class="filter-btn active" id="filter-all">All</button>
+    <button class="filter-btn" id="filter-pending" >Pending</button>
+    <button class="filter-btn" id="filter-in-progress" >In Progress</button>
+    <button class="filter-btn" id="filter-done">Done</button>
+    <button class="filter-btn" id="filter-overdue">Overdue</button>
+    <button class="add-btn" id="addBtn">+ Add Task</button>
+  </div>
+
+  <!-- List -->
+  <div class="section-head" id="listHead">ALL ASSIGNMENTS</div>
+  <div class="assignments-list" id="assignmentsList"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2 id="modalTitle">New Assignment</h2>
+    <div class="form-group">
+      <label class="form-label">Task Title</label>
+      <input class="form-input" id="inputTitle" type="text" placeholder="e.g. Calculus Problem Set 3">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input class="form-input" id="inputSubject" type="text" placeholder="e.g. Mathematics">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Type</label>
+        <select class="form-select" id="inputType">
+          <option value="Assignment">Assignment</option>
+          <option value="Project">Project</option>
+          <option value="Quiz">Quiz</option>
+          <option value="Exam">Exam</option>
+          <option value="Lab">Lab Report</option>
+          <option value="Presentation">Presentation</option>
+          <option value="Reading">Reading</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Due Date</label>
+        <input class="form-input" id="inputDue" type="date">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Status</label>
+        <select class="form-select" id="inputStatus">
+          <option value="pending">Pending</option>
+          <option value="in-progress">In Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Notes (optional)</label>
+      <input class="form-input" id="inputNotes" type="text" placeholder="Any extra details...">
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cancelBtn">Cancel</button>
+      <button class="btn-save" id="saveBtn" >Save Task</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
