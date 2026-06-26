@@ -1,15 +1,17 @@
+<img width="1713" height="1886" alt="Screenshot_26-6-2026_105037_jaish2008 github io" src="https://github.com/user-attachments/assets/9b5375d8-9fce-493c-b2ab-4f47234c4f44" />
+## 🌐 Live Demo
+
+🔗 [https://jaish2008.github.io/studysync]https://jaish2008.github.io/StudySync/
+
+
+---
 # StudySync
+
  A smart study companion app for students to organize sessions, collaborate in real-time, track progress, and share notes — all in one place.
+ 
 # 📚 StudySync — College Assignment Tracker
 
 A clean, modern assignment tracker for college students to manage tasks, deadlines, and progress — powered by **Firebase Firestore** for real-time cloud storage.
-
----
-
-## 🌐 Live Demo
-
-🔗 [https://jaish2008.github.io/studysync](https://jaish2008.github.io/studysync)
-
 
 ---
 
@@ -105,7 +107,13 @@ https://jaish2008.github.io/studysync
 
 ## 📸 Screenshots
 
-> Add screenshots of your app here after deployment!
+### Dashboard
+
+![Dashboard](images/dash.png)
+### Add Assignment
+
+![Add Assignment](images/add.png)
+
 
 ---
 
@@ -132,6 +140,8 @@ https://jaish2008.github.io/studysync
 This project is open source and available under the [MIT License](LICENSE).
 
 
+           THANK YOU!
+--
 
-
-
+© 2026 Jaishmeet Kaur
+Built with HTML, CSS, JS
