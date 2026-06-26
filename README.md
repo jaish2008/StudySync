@@ -45,6 +45,8 @@ A clean, modern assignment tracker for college students to manage tasks, deadlin
 
 ```
 studysync/
+├── add.jpeg
+├── dash.jpeg
 ├── index.html       # Main HTML file
 ├── style.css        # All styles and animations
 ├── script.js        # Firebase logic and app functionality
@@ -108,11 +110,11 @@ https://jaish2008.github.io/studysync
 
 ### Dashboard
 
-![Dashboard](dash.png)
+![Dashboard](dash.jpeg)
 
 ### Add Assignment
 
-![Add Assignment](add.png)
+![Add Assignment](add.jpeg)
 
 ---
 
