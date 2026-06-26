@@ -1,4 +1,3 @@
-<img width="1713" height="1886" alt="Screenshot_26-6-2026_105037_jaish2008 github io" src="https://github.com/user-attachments/assets/9b5375d8-9fce-493c-b2ab-4f47234c4f44" />
 ## 🌐 Live Demo
 
 🔗 [https://jaish2008.github.io/studysync]https://jaish2008.github.io/StudySync/
