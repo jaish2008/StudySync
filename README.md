@@ -108,11 +108,11 @@ https://jaish2008.github.io/studysync
 
 ### Dashboard
 
-![Dashboard] "C:\Users\Jaish\Downloads\dash.jpeg"
+![Dashboard](dash.png)
+
 ### Add Assignment
 
-![Add Assignment](images/add.png)
-
+![Add Assignment](add.png)
 
 ---
 
