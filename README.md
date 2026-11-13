@@ -1,6 +1,6 @@
 ## 🌐 Live Demo
 
-🔗 [https://jaish2008.github.io/studysync]https://jaish2008.github.io/StudySync/
+[Open StudySync](https://jaish2008.github.io/StudySync/)
 
 
 ---
